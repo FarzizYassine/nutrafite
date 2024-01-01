@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NutraFit , Nothing is impossible </title>
+	<meta name="discription" content="comment perdre du poids comment gagner du poids ?">
+	<meta name="discription" content="comment ganger du poids comment gagner du poids ?">
+	<meta name="discription" content="le metabolisme basal">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href= "logotmf.png">
+   
+</head>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Square Peg';
+	}
+    #intro {
+		display: flex;
+		min-height: 100vh;
+		width: 100%;
+		backdrop-filter: brightness(60%);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		animation: slide 18s cubic-bezier(0.1, -0.6, 0.2, 0) infinite;
+		background-size: cover;
+		background-position: center;
+	}
+	.introtext {
+         display: flex;
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+	}
+	
+	@keyframes slide{
+		0%,100%{
+             background-image: url(1.jpg);
+			 backdrop-filter: brightness(60%);
+		}
+		25%{
+			background-image: url(2.jpg);
+			backdrop-filter: brightness(60%);
+		}
+		50%{
+			background-image: url(3.jpg);
+			backdrop-filter: brightness(60%);
+		}
+		75%{
+			background-image: url(4.jpg);
+			backdrop-filter: brightness(60%);
+		}
+	}
+	.C {
+		width: 100%;
+		height: 100%;
+		color: white;
+		font-size: 150px;
+		visibility: hidden;
+		animation: down 1s  1s  linear forwards;
+		text-align: center;
+	}
+	.P{
+		width: 100%;
+		height: 100%;
+		font-size: 50px;
+		color: #205072;
+		visibility: hidden;
+		animation: up 1s  1s  linear forwards;
+		text-align: center;
+	}
+	
+	html {
+		scroll-behavior: smooth;
+	}
+	#denous{
+		min-height: 100vh;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-top: 125px;
+		background-color: #f1fdfa;
+		position: relative;
+	}
+	.contenu-de-nous{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background-color: #f1fdfa;
+	}
+	.text{
+	color: white;
+	background-color: #205072;
+	 font-size: xx-large;
+	 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	 width: auto;
+		height: 400px;
+		border-radius: 10% 0% 10% 0%;
+		margin-left: 5%;
+	}
+	
+	.logos {
+		width: 100%;
+		height: 100%;
+	}
+	.logos img{
+		width: auto;
+		height: 400px;
+		border-radius: 0 10% 0 10%;
+	}
+	#nos-service{
+		position: relative;
+		width: 100%;
+		height: 100%;
+        display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		background-color: #f1fdfa;
+
+	}
+	#nos-service .fa-dumbbell{
+		position: absolute;
+		right: 30px;
+		bottom: 14px;
+		z-index: 0;
+		font-size: 60px;
+		color: #205072;
+		
+	}
+	#nos-service h1{
+		text-align: center;
+		color: #56c596;
+		font-size: 100px;
+		padding-top: 50px;
+	}
+	.cards{
+		width: 100%;
+		display: flex;
+        flex-flow: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.cards a{
+		text-decoration: none;
+		background-image: linear-gradient(-45deg,#56c596, #205072);
+		margin: 30px;
+		width: 350px;
+		height: 175px;
+		z-index: 50;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid white;
+		border-radius: 30px;
+       transition-duration: 0.8s;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.card h5{
+		text-align: center;
+		align-items: center;
+		font-size: 35px;
+		color: white;
+	}
+	.cards a:hover {
+		transform: scale(1.1);
+		border: 1px solid #205072;
+		background-image: none;
+		background-color: white;
+		transition-duration: 0.8s;
+	}
+	.cards a:hover h5{
+		color: #205072;
+	}
+	.cards a:hover i{
+		display: flex;
+		transition-duration: 0.8s;
+	}
+	.cards a i{
+		display: none;
+		font-size: 35px;
+		color: #205072;
+		text-align: center;
+        transition-duration: 0.8s;
+	}
+	#head1 {
+		height: auto;
+		width: 100%;
+		top: 0;
+		color: #205072;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: fixed;
+	}
+	
+@keyframes headr {
+    0% {
+        transform: translateY(-50px);
+		visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+		visibility: visible;
+    }
+}
+
+#head {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #56c596;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+	visibility: hidden;
+    position: fixed;
+	animation: headr 0.7s linear forwards;
+}
+
+#head img {
+    width: 50px;
+    height: 50px;
+}
+
+
+	.txt{
+		height: 500px;
+		text-align: center;
+		font-size: 30px;
+		align-items: center;
+		color: white;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		background-color: #205072;
+	}
+	.txt button{
+		padding: 10px;
+		background-color: #205072;
+		color: white;
+		border-radius: 15px;
+		border: 1px solid;
+		font-size: 25px;
+		margin-top: 25px;
+		width: 150px;
+		transition: .5s;
+	}
+	.txt button:hover{
+		background-color: white;
+		color: #205072;
+		cursor: pointer;
+		transition: .5s;
+	}
+	#head1 img{
+		width: 50px;
+		height: 50px;
+		display: none;
+	}
+	#head1 nav{
+		height: 100%;
+	    width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#head1 nav a{
+		text-decoration: none;
+		color: #205072;
+		font-size: 30px;
+	}
+	
+	#head nav{
+		height: 50px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#head nav a{
+		text-decoration: none;
+		color: #31ddb2;
+		font-size: 25px;
+	}
+	#head nav a:hover{
+		color: #205072;
+		transition-duration: 0.8s;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		color: white;
+		font-size: 20px;
+	}
+	#contacte{
+		text-decoration: none;
+		color: white;
+	}
+	.contact a{
+		text-decoration: none;
+		color: white;
+		transition-duration: 1s;
+	}
+	.contact a:hover{
+		color: #205072;
+		transition-duration: 1s;
+	}
+	#pour-plus{
+		height: 275px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		background-color: #56c596;
+		align-items: center;
+	}
+	.navigation{
+		display: flex;
+		flex-direction: column;
+	}
+	.articles{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		font-size: 20px;
+	}
+	.mail{
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+	}
+	.mail h6{
+		color: #205072;
+		font-size: 20px
+	}
+	.mail h6 i{
+		margin-right: 10px;
+		color: white;
+	}
+	.articles a{
+		text-decoration: none;
+		display: flex;
+		 color: white;
+		 font-size: 25px;
+		 transition-duration: 0.8s;
+	}
+	.articles a p{
+        visibility: hidden;
+	}
+	.articles a:hover{
+		color: #205072;
+		transition-duration: 0.8s;
+	}
+	.articles a:hover p{
+		visibility: visible;
+	}
+	.navigation a{
+	     text-decoration: none;
+		 color: white;
+		 width: 100%;
+		 font-size: 25px;
+		 transition-duration: 0.8s;
+	}
+	.navigation a:hover{
+		transform: translateX(4px);
+		color: #205072;
+		transition-duration: 0.8s;
+	}
+
+	::-webkit-scrollbar {
+		width: 7px;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #31ddb2;
+		border-radius: 15%;
+	}
+	::-webkit-scrollbar-track {
+		background-color: #94f3db;
+	}
+	
+	#lastone {
+		
+		text-align: center;
+		padding: 15px;
+		background-color: #56c596;
+		border-top: 1px solid #205072;
+		color: white;
+		font-size: 20px;
+	}
+	#lastone h3 a{
+		text-decoration: none;
+        margin-left: 5px;
+		color: #205072;
+	}
+	#denous h1{
+		text-align: center;
+		 color: #56c596; 
+		 font-size: 100px; 
+		 padding-bottom: 30px;
+	}
+	#nos-service h2{
+		font-size: 65px; 
+		 color: #205072;
+		 text-align: center;
+	}
+	#ns{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		position: relative;
+	}
+	.bmrmain{
+		display: flex;
+		background-color: #205072;
+        width: 100%;
+		height: 100%;	
+	}
+	.img{
+		width: 1000px;
+		height: 500px;
+        background-image: url(bmr.jpg);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-attachment: fixed;
+		border-radius: 0 15% 15% 0;
+	}
+	.circless1{ 
+		  position: absolute;
+		    right: 40px;
+			top:  40px;
+			font-size: 30px;
+			display: flex;
+			padding: 30px;
+			border-radius: 50%;
+			background-color: #205072;
+	}
+
+      .circless2{
+		font-size: 30px;
+		  right: 160px;
+			bottom:  160px;
+			display: flex;
+            position: absolute;
+			border-radius: 50%;
+			padding: 30px;
+			background-color: #31ddb2;
+	}
+      .circless3{
+		font-size: 30px;
+		    left: 40px;
+			bottom:  40px;
+			display: flex;
+			padding: 30px;
+            position: absolute;
+			border-radius: 50%;
+			background-color: #205072;
+	}
+      .circless4{
+		   font-size: 30px;
+            position: absolute;
+			left: 160px;
+			top: 160px;
+			display: flex;
+			padding: 30px;
+			border-radius: 50%;
+			background-color: #31ddb2;
+	}
+	.cc1{
+		transform: translateY(-80px);
+	}
+	.cc2{
+transform: translateY(80px);
+	}
+	.cc3{
+transform: translateY(-80px);
+	}
+	.cc4{
+		transform: translateY(80px);
+	}
+	.cc1-visible{
+        transform: translateY(0px);
+		transition: 1s ;
+}
+.cc2-visible{
+	transform: translateY(0px);
+		transition: 1s ;
+}
+.cc3-visible{
+	transform: translateY(0px) ;
+		transition: 1s;
+}
+.cc4-visible{
+	transform: translateY(0px) ;
+		transition: 1s;
+}
+#ss{
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#calc{
+	width: 350px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #205072;
+	color: white;
+	margin: 5%;
+	font-size: 25px;
+	border: solid 1px #205072;
+	transition-duration: 0.5s;
+	padding: 2%;
+    border-radius: 5% 0 5% 0;	
+	z-index: 2;
+
+}
+#info{
+	width: 350px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #205072;
+	color: white;
+	margin: 5%;
+	font-size: 25px;
+	border: solid 1px #205072;
+	transition: 0.5s;
+	padding: 2%;
+	border-radius: 0 5% 0 5%;	
+    z-index: 2;
+}
+#info i{
+	display: none;
+}
+#info:hover i{
+	display: flex;
+}
+#info:hover {
+	background-color: white;
+	color: #205072;
+	transition-duration: 0.5s;
+	border-radius: 5% 0 5% 0;	
+}
+#calc i{
+	display: none;
+}
+#calc:hover i{
+	display: flex;
+}
+#calc:hover {
+	background-color: white;
+	color: #205072;
+	transition-duration: 0.5s;
+	border-radius: 0 5% 0 5%;	
+}
+	@keyframes up{
+		0%{
+			visibility: visible;
+			transform: translateY(50px);
+		}
+		100%{
+			visibility: visible;
+			transform: translateY(0px);
+		}
+	}
+	@keyframes down{
+		0%{
+			visibility: visible;
+			transform: translateY(-50px);
+		}
+		100%{
+			visibility: visible;
+			transform: translateY(0px);
+		}
+	}
+	.reveal {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	.reveal-visible{
+		opacity: 1;
+		transform: translateY(0);
+		transition: 1s ;
+	}
+	.reveal2 {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	.reveal2-visible{
+		opacity: 1;
+		transform: translateY(0);
+		transition: 1s ;
+	}
+	@media only screen and (max-width : 500px){
+		body{
+			margin: 0;
+			padding: 0;
+			outline: none;
+		}
+		.P{
+			font-size: 40px;
+		}
+		.C{
+			font-size: 60px;
+		}
+        
+		.introtext{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			padding-bottom: 250px;
+		}
+		#intro{
+			width: 100%;
+			min-height: 100vh;
+		}
+		.cards{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.cards a{
+			margin: 15px;
+		}
+		.logos{
+			display: none;
+		}
+		#pour-plus{
+			flex-direction: column;
+			height: 550px;
+			width: 100%;
+			align-items: flex-start;
+		}
+		.mail h6{
+			display: flex;
+			width: 100%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 60px;
+		}
+		.articles {
+			width: 100%;
+			margin-bottom: 10px;
+			align-items: flex-start;
+		}
+		.articles a{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 60px;
+		}
+		.navigation {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.navigation a{
+			transform: translateX(80px);
+			margin-top: 5px;
+			margin-bottom: 5px;
+			width: 100px;	
+			font-size: 20px;
+		}
+        .contact a{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 60px;
+		}
+		.text { 
+	background-image: url("5.jpg");
+	 background-position: center;
+	 background-size: cover;
+	 backdrop-filter: brightness(60%);
+			width: 100%;
+			height: 100%;
+	color: white;
+	 margin: 0;
+	 border-radius: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-size: 15px;
+	 transition-delay: 1s;
+	 animation: none;
+		}
+		.txt{
+			background-image: url("bmr.jpg");
+	 background-position: center;
+	 background-size: cover;
+	 backdrop-filter: brightness(60%);
+			width: 100%;
+			height: 550px;
+	color: white;
+	 margin: 0;
+	 border-radius: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-size: 25px;
+	 transition-delay: 1s;
+	 animation: none;
+		}
+	#ss{
+		flex-direction: column;
+	}
+		.img{
+			display: none;
+		}
+		.contenu-de-nous{
+			border: none;
+		}
+		.text:hover{
+			animation: none;
+		}
+		#denous h1{
+			font-size: 60px;
+		}
+		#nos-service h1{
+			font-size: 60px;
+		}
+		#nos-service h2{
+			font-size: 45px;
+		}
+		.text p{
+			font-size: 40px;
+			backdrop-filter: brightness(60%);
+		}
+		.contenu {
+			height: auto;
+			justify-content: space-between;
+		}
+	}
+</style>
+	<body>
+	<div id="intro">
+		<header id="head1">	
+		<a href="#intro"><img src="logotm.png" class="image"></a>
+		<nav class="nav">
+			<a href="#denous">À propos de nous</a>
+			<a href="#nos-service">Nos service</a>
+			<a href="#pour-plus">Pour Plus</a>
+		</nav>
+	</header>
+	<div class="contenu">
+		<div class="introtext">
+		<h1 class="C">NutraFit</h1>
+		<h1 class="P">Corps nourri, vie sculptée. Fitness et nutrition : potentiel déployé.</h1>
+	</div>
+	</div>
+	</div>
+     <div id="denous">
+			<header id="head">
+           <a href="#intro"><img src="logotm.png" class="image"></a>
+		    <nav class="nav">
+			<a href="#denous">À propos de nous</a>
+			<a href="#nos-service">Nos service</a>
+			<a href="#pour-plus">Pour Plus</a>
+			</header>
+	<h1 >A propos de nous </h1>
+	<div class="contenu-de-nous">
+		<div class="text reveal">
+     <p >NutraFit est une plateforme en ligne dédiée à la forme physique et à la santé .<br>
+		 Elle offre des conseils et des informations précieuses ainsi que des calculs pour vous aider à atteindre vos objectifs de fitness. <br>
+		  Tout cela est gratuit et accessible à tous, que vous soyez un débutant ou un athlète aguerri. <br>
+		   Rejoignez notre communauté en ligne aujourd'hui pour découvrir comment NutraFit peut vous aider à vivre une vie plus saine et plus active.</p>
+     </div>
+	 <div class="logos">
+		<img src="5.jpg" class="reveal2" alt="">
+	 </div>
+	 </div>
+	</div>
+	 <div id="nos-service">
+		
+		<h1>Nos Services</h1>
+		<div id="ns">
+			<div class="circless1 cc1"></div>
+				<div class="circless2 cc2"></div>
+				<div class="circless3 cc3" ></div>
+				<div class="circless4 cc4" ></div>
+			<div id="ss">
+				
+            <div id="calc">
+				<i class="fa-solid fa-calculator"></i>
+                <p>
+					Faites de chaque repas une victoire avec Nutrafite! Nos calculateurs personnalisés sont les architectes de votre succès nutritionnel. Révélez la meilleure version de vous-même en planifiant des repas adaptés à vos objectifs. Nutrafite transforme les chiffres en opportunités, chaque calcul étant une étape motivante vers une alimentation équilibrée. Ensemble, marchons sur le chemin de la santé, car chaque petit pas compte vers une vie plus vibrante et dynamique.
+				</p>
+			</div>
+			<div id="info">
+				<i class="fa-solid fa-question"></i>
+                <p>
+					Explorez le monde de la nutrition avec Nutrafite, votre allié pour une vie plus saine et dynamique. Nos articles captivants transforment la complexité de la nutrition en une aventure passionnante. Chez Nutrafite, nous croyons en votre capacité à prendre des décisions informées pour cultiver une meilleure santé.
+				</p>
+			</div>
+			</div>
+		</div>
+		<div id="bmr">
+			<h1>Calcul gratuit du BMR </h1>
+			<div class="bmrmain">
+			<div class="img">	
+			</div>
+			<div class="txt">
+				Le BMR, ou Taux Métabolique de Base , est la quantité minimale d'énergie (exprimée en calories) que le corps a besoin pour maintenir ses fonctions vitales lorsque vous êtes au repos, 
+				c'est-à-dire lorsque vous ne faites aucune activité physique ni digestion. <br>
+				 Le BMR représente l'énergie nécessaire pour maintenir des fonctions telles que la respiration, la circulation sanguine, la régulation de la température corporelle et le fonctionnement des organes internes.
+				 <br> Il varie d'une personne à l'autre en fonction de facteurs tels que l'âge, le sexe, la masse musculaire et le poids corporel.
+				 <br> Le BMR est souvent utilisé comme point de départ pour déterminer les besoins caloriques quotidiens d'une personne dans le cadre d'un régime alimentaire ou d'un plan de gestion du poids.
+			    <br>
+				<button>Calculer</button>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div id="pour-plus">
+      <div class="mail">
+		<h4 style="color: #205072;">Email</h4>
+		<h6><i class="fa-solid fa-envelope"></i>cestletemps@gmail.com</h6>
+	  </div>
+	  <div class="articles">
+		<h4 style="color: #205072;">Articles interessant</h4>
+		<a href="">Le jeune intermittent <p>?</p></a>
+		<a href="">Le perds du poids <p>?</p></a>
+		<a href="file:///C:/Users/asus/Desktop/it's%20time/article/Untitled-1.html">Le Keto diet <p>?</p></a>
+		<a href="file:///C:/Users/asus/Desktop/it's%20time/dcart/dcart.html">Le déficit calorique<p>?</p></a>
+	  </div>
+	  <div class="navigation">
+		    <a href="#denous"><i class="fa-solid fa-chevron-right"></i>À propos de nous</a>
+			<a href="#nos-service"><i class="fa-solid fa-chevron-right"></i>Nos service</a>
+	  </div>
+	 <div class="contact">
+         <h3 style="color: #205072;">Suivez nous sur</h3>
+		<a href="https://www.instagram.com/cest.letemps/"><i class="fa-brands fa-instagram"></i>Instagram</a>	
+		<a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+		<a href=""><i class="fa-sharp fa-solid fa-shop"></i>Store</a>
+	</div>
+</div>
+<div id="lastone">
+	<h3>Faite par<a href="www.farzizyassine.github.io">@Farziz yassine</a></h3>
+</div>
+	  <script src="script.js"></script>
+</body>
+</html>
